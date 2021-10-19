@@ -23,7 +23,22 @@ namespace GraduationProjectSkillbox.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Blog()
+        {
+            return View();
+        }
+
+        public IActionResult Contacts()
+        {
+            return View();
+        }
+
+        public IActionResult Services()
+        {
+            return View();
+        }
+
+        public IActionResult Projects()
         {
             return View();
         }

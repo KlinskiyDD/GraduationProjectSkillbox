@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\skull\\Desktop\\GraduationProjectSkillbox\\GraduationProjectSkillbox\\GraduationProjectSkillbox.csproj": {}
+    "C:\\Users\\User\\Desktop\\GraduationProjectSkillbox\\GraduationProjectSkillbox\\GraduationProjectSkillbox.csproj": {}
   },
   "projects": {
-    "C:\\Users\\skull\\Desktop\\GraduationProjectSkillbox\\GraduationProjectSkillbox\\GraduationProjectSkillbox.csproj": {
+    "C:\\Users\\User\\Desktop\\GraduationProjectSkillbox\\GraduationProjectSkillbox\\GraduationProjectSkillbox.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\skull\\Desktop\\GraduationProjectSkillbox\\GraduationProjectSkillbox\\GraduationProjectSkillbox.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\GraduationProjectSkillbox\\GraduationProjectSkillbox\\GraduationProjectSkillbox.csproj",
         "projectName": "GraduationProjectSkillbox",
-        "projectPath": "C:\\Users\\skull\\Desktop\\GraduationProjectSkillbox\\GraduationProjectSkillbox\\GraduationProjectSkillbox.csproj",
-        "packagesPath": "C:\\Users\\skull\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\skull\\Desktop\\GraduationProjectSkillbox\\GraduationProjectSkillbox\\obj\\",
+        "projectPath": "C:\\Users\\User\\Desktop\\GraduationProjectSkillbox\\GraduationProjectSkillbox\\GraduationProjectSkillbox.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\GraduationProjectSkillbox\\GraduationProjectSkillbox\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\skull\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -57,7 +57,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }
