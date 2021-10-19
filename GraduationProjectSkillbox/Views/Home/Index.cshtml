@@ -2,7 +2,36 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<section class="call-to-action">
+    <div class="container">
+        <div class="call-to-action-content flex">
+            <h1 class="call-to-action-title">
+                IT-КОНСАЛТИНГ<br>БЕЗ РЕГИСТРАЦИИ И&nbsp;СМС
+            </h1>
+            <button class="btn call-to-action-btn btn-reset">
+                ОСТАВИТЬ ЗАЯВКУ
+            </button>
+        </div>
+    </div>
+</section>
+<section class="leave-request section-offset">
+    <div class="container">
+        <h2 class="section-title">Оставить заявку или задать вопрос</h2>
+        <form method="post" class="form">
+            <div class="form-top">
+                <div class="form-left">
+                    <input class="form-input" type="text" name="name" placeholder="Имя" required>
+                    <input class="form-input" type="email" name="Email" placeholder="Email" required>
+                </div>
+                <div class="form-right">
+                    <textarea class="form-textarea" name="textmessage" placeholder="Текст сообщения"></textarea>
+                </div>
+            </div>
+            <div class="form-bottom">
+                <button class="btn btn-reset">
+                    Отправить
+                </button>
+            </div>
+        </form>
+    </div>
+</section>
