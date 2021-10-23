@@ -1,0 +1,27 @@
+﻿@model IEnumerable<ProjectCard>
+
+@{
+    ViewData["Title"] = "Projects Page";
+}
+<section class="projects section-offset">
+    <div class="container">
+        <h2 class="section-title">
+            Проекты
+        </h2>
+        <ul class="projects-list list-reset flex">
+            @{
+                foreach (var Project in Model)
+                {
+                    <a asp-controller="Project" asp-action="ProjectCard" asp-route-id="@Project.Id">
+                        <li class="projects-list-item flex">
+                            <img src="@Project.Image" alt="Сбербанк" class="project-image">
+                            <p class="project-description-text">
+                                @Project.Title
+                            </p>
+                        </li>
+                    </a>
+                }
+            }
+        </ul>
+    </div>
+</section>

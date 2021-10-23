@@ -78,7 +78,9 @@ C:\Users\User\Desktop\GraduationProjectSkillbox\GraduationProjectSkillbox\obj\De
 C:\Users\User\Desktop\GraduationProjectSkillbox\GraduationProjectSkillbox\obj\Debug\net5.0\GraduationProjectSkillbox.pdb
 C:\Users\User\Desktop\GraduationProjectSkillbox\GraduationProjectSkillbox\obj\Debug\net5.0\GraduationProjectSkillbox.genruntimeconfig.cache
 C:\Users\User\Desktop\GraduationProjectSkillbox\GraduationProjectSkillbox\obj\Debug\net5.0\GraduationProjectSkillbox.csproj.CopyComplete
-C:\Users\User\Desktop\GraduationProjectSkillbox\GraduationProjectSkillbox\obj\Debug\net5.0\Razor\Views\Home\Blog.cshtml.g.cs
 C:\Users\User\Desktop\GraduationProjectSkillbox\GraduationProjectSkillbox\obj\Debug\net5.0\Razor\Views\Home\Services.cshtml.g.cs
 C:\Users\User\Desktop\GraduationProjectSkillbox\GraduationProjectSkillbox\obj\Debug\net5.0\Razor\Views\Home\Contacts.cshtml.g.cs
-C:\Users\User\Desktop\GraduationProjectSkillbox\GraduationProjectSkillbox\obj\Debug\net5.0\Razor\Views\Home\Projects.cshtml.g.cs
+C:\Users\User\Desktop\GraduationProjectSkillbox\GraduationProjectSkillbox\obj\Debug\net5.0\Razor\Views\Project\ProjectCard.cshtml.g.cs
+C:\Users\User\Desktop\GraduationProjectSkillbox\GraduationProjectSkillbox\obj\Debug\net5.0\Razor\Views\Project\Projects.cshtml.g.cs
+C:\Users\User\Desktop\GraduationProjectSkillbox\GraduationProjectSkillbox\obj\Debug\net5.0\Razor\Views\Blog\Blog.cshtml.g.cs
+C:\Users\User\Desktop\GraduationProjectSkillbox\GraduationProjectSkillbox\obj\Debug\net5.0\Razor\Views\Blog\BlogCard.cshtml.g.cs

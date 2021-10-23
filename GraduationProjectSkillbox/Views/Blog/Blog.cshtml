@@ -1,0 +1,39 @@
+﻿@model IEnumerable<BlogCard>
+@{
+    ViewData["Title"] = "Blog Page";
+}
+<section class="blog section-offset">
+    <div class="container">
+        <h2 class="section-title">
+            Блог
+        </h2>
+        <p class="section-description">
+            Описание секции блог
+        </p>
+        <ul class="blog-list list-reset flex">
+            @{
+                foreach (var Blog in Model)
+                {
+                    <a asp-controller="Blog" asp-action="BlogCard" asp-route-id="@Blog.Id">
+                        <li class="bloc-item">
+                            <article class="blog-preview flex">
+                                <img src="@Blog.Image" alt="Blog photo 1" class="blog-preview-image">
+                                <div class="blog-preview-text">
+                                    <time class="blog-preview-time" datetime="2021-11-15 19:30">
+                                        @Blog.Time.ToLongDateString()
+                                    </time>
+                                    <h3 class="blog-preview-title">
+                                        @Blog.Title
+                                    </h3>
+                                    <p class="blog-preview-description">
+                                        @Blog.Description
+                                    </p>
+                                </div>
+                            </article>
+                        </li>
+                    </a>
+                }
+            }
+        </ul>
+    </div>
+</section>

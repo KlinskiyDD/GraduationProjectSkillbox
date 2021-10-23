@@ -1,0 +1,16 @@
+﻿@model BlogCard
+<div class="container">
+    <h2 class="title">@Model.Title</h2>
+    <hr />
+    <div class="flex">
+        <img src="@Model.Image" alt="" class="img-blog-card">
+        <div class="blog-card-description">
+            <p>
+                @Model.Description
+            </p>
+            <div class="btn-blog-card">
+                <button class="btn btn-reset btn-blog-card-right"  onclick="MyTest">&lt; Назад</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -6,16 +6,21 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using GraduationProjectSkillbox.Interface;
 
 namespace GraduationProjectSkillbox.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly ICard<BlogCard> _blogCard;
+        private readonly ICard<ProjectCard> _projectCard;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, ICard<BlogCard> blogCard, ICard<ProjectCard> projectCard)
         {
             _logger = logger;
+            _blogCard = blogCard;
+            _projectCard = projectCard;
         }
 
         public IActionResult Index()
@@ -25,7 +30,7 @@ namespace GraduationProjectSkillbox.Controllers
 
         public IActionResult Blog()
         {
-            return View();
+            return View(_blogCard.GetCards());
         }
 
         public IActionResult Contacts()
@@ -37,12 +42,7 @@ namespace GraduationProjectSkillbox.Controllers
         {
             return View();
         }
-
-        public IActionResult Projects()
-        {
-            return View();
-        }
-
+        
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
