@@ -84,3 +84,14 @@ C:\Users\User\Desktop\GraduationProjectSkillbox\GraduationProjectSkillbox\obj\De
 C:\Users\User\Desktop\GraduationProjectSkillbox\GraduationProjectSkillbox\obj\Debug\net5.0\Razor\Views\Project\Projects.cshtml.g.cs
 C:\Users\User\Desktop\GraduationProjectSkillbox\GraduationProjectSkillbox\obj\Debug\net5.0\Razor\Views\Blog\Blog.cshtml.g.cs
 C:\Users\User\Desktop\GraduationProjectSkillbox\GraduationProjectSkillbox\obj\Debug\net5.0\Razor\Views\Blog\BlogCard.cshtml.g.cs
+C:\Users\User\Desktop\GraduationProjectSkillbox\GraduationProjectSkillbox\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\User\Desktop\GraduationProjectSkillbox\GraduationProjectSkillbox\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\User\Desktop\GraduationProjectSkillbox\GraduationProjectSkillbox\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\User\Desktop\GraduationProjectSkillbox\GraduationProjectSkillbox\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\User\Desktop\GraduationProjectSkillbox\GraduationProjectSkillbox\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\User\Desktop\GraduationProjectSkillbox\GraduationProjectSkillbox\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\User\Desktop\GraduationProjectSkillbox\GraduationProjectSkillbox\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\User\Desktop\GraduationProjectSkillbox\GraduationProjectSkillbox\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\User\Desktop\GraduationProjectSkillbox\GraduationProjectSkillbox\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\User\Desktop\GraduationProjectSkillbox\GraduationProjectSkillbox\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\User\Desktop\GraduationProjectSkillbox\GraduationProjectSkillbox\bin\Debug\net5.0\Newtonsoft.Json.dll

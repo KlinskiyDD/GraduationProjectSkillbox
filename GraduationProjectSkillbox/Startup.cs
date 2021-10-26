@@ -8,9 +8,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using GraduationProjectSkillbox.Data;
 using GraduationProjectSkillbox.Interface;
 using GraduationProjectSkillbox.Models;
-using GraduationProjectSkillbox.Repository;
 
 namespace GraduationProjectSkillbox
 {
@@ -27,8 +27,8 @@ namespace GraduationProjectSkillbox
         {
             services.AddControllersWithViews();
             services.AddMvc(options => options.EnableEndpointRouting = false);
-            services.AddScoped<ICard<BlogCard>,BlogRep>();
-            services.AddScoped<ICard<ProjectCard>,ProjectRep>();
+            services.AddScoped<ICard<BlogCard>,BlogAPI>();
+            services.AddScoped<ICard<ProjectCard>,ProjectAPI>();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
