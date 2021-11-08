@@ -3,8 +3,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using GraduationProjectSkillbox.Interface;
-using GraduationProjectSkillbox.Models;
+using GraduationProjectSkillbox.Domain.Interface;
+using GraduationProjectSkillbox.Domain.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace GraduationProjectSkillbox.Controllers
 {
