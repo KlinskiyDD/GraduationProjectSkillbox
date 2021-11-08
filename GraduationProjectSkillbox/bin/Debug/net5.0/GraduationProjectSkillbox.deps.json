@@ -33,6 +33,7 @@
     ".NETCoreApp,Version=v5.0": {
       "GraduationProjectSkillbox/1.0.0": {
         "dependencies": {
+          "GraduationProjectSkillbox.Domain": "1.0.0",
           "Microsoft.AspNetCore.Identity": "2.2.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "5.0.11",
           "Newtonsoft.Json": "13.0.1",
@@ -636,16 +637,8 @@
         }
       },
       "System.Buffers/4.5.0": {},
-      "System.Collections.Immutable/5.0.0": {
-        "compile": {
-          "lib/netstandard2.0/System.Collections.Immutable.dll": {}
-        }
-      },
-      "System.ComponentModel.Annotations/5.0.0": {
-        "compile": {
-          "ref/netstandard2.1/System.ComponentModel.Annotations.dll": {}
-        }
-      },
+      "System.Collections.Immutable/5.0.0": {},
+      "System.ComponentModel.Annotations/5.0.0": {},
       "System.Diagnostics.DiagnosticSource/5.0.1": {
         "runtime": {
           "lib/net5.0/System.Diagnostics.DiagnosticSource.dll": {
@@ -686,6 +679,14 @@
         }
       },
       "System.Text.Encodings.Web/4.5.0": {},
+      "GraduationProjectSkillbox.Domain/1.0.0": {
+        "runtime": {
+          "GraduationProjectSkillbox.Domain.dll": {}
+        },
+        "compile": {
+          "GraduationProjectSkillbox.Domain.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Antiforgery/5.0.0.0": {
         "compile": {
           "Microsoft.AspNetCore.Antiforgery.dll": {}
@@ -2712,6 +2713,11 @@
       "sha512": "sha512-Xg4G4Indi4dqP1iuAiMSwpiWS54ZghzR644OtsRCm/m/lBMG8dUBhLVN7hLm8NNrNTR+iGbshCPTwrvxZPlm4g==",
       "path": "system.text.encodings.web/4.5.0",
       "hashPath": "system.text.encodings.web.4.5.0.nupkg.sha512"
+    },
+    "GraduationProjectSkillbox.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Microsoft.AspNetCore.Antiforgery/5.0.0.0": {
       "type": "referenceassembly",

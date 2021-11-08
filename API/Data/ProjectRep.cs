@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using API.Interface;
-using API.Models;
+using GraduationProjectSkillbox.Domain.Interface;
+using GraduationProjectSkillbox.Domain.Models;
 
 namespace API.Data  
 {
@@ -60,8 +60,7 @@ namespace API.Data
 
         public ProjectCard GetCardOnId(int? id)
         {
-            if (id != null) return projectCards[id.Value];
-            return new NullProjectCard();
+            return projectCards[id.Value];
         }
     }
 }

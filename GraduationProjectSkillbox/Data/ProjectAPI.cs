@@ -4,8 +4,8 @@ using System.Linq;
 using System.Net.Http;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
-using GraduationProjectSkillbox.Interface;
-using GraduationProjectSkillbox.Models;
+using GraduationProjectSkillbox.Domain.Interface;
+using GraduationProjectSkillbox.Domain.Models;
 using Newtonsoft.Json;
 
 namespace GraduationProjectSkillbox.Data
@@ -21,7 +21,7 @@ namespace GraduationProjectSkillbox.Data
 
         public IEnumerable<ProjectCard> GetCards()
         {
-            var url = @"https://localhost:44367/api/project";
+            var url = @"https://localhost:44318/api/project";
             var json = httpClient.GetStringAsync(url).Result;
             return JsonConvert.DeserializeObject<IEnumerable<ProjectCard>>(json);
         }
@@ -43,7 +43,7 @@ namespace GraduationProjectSkillbox.Data
 
         public ProjectCard GetCardOnId(int? id)
         {
-            var url = @"https://localhost:44367/api/project/" + id;
+            var url = @"https://localhost:44318/api/project/" + id;
             var json = httpClient.GetStringAsync(url).Result;
             return JsonConvert.DeserializeObject<ProjectCard>(json);
         }

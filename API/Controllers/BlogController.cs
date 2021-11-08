@@ -3,8 +3,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using API.Interface;
-using API.Models;
+using GraduationProjectSkillbox.Domain.Interface;
+using GraduationProjectSkillbox.Domain.Models;
 
 namespace API.Controllers
 {

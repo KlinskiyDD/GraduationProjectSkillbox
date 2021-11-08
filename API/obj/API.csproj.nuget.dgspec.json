@@ -1,20 +1,95 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Desktop\\GraduationProjectSkillbox\\API\\API.csproj": {}
+    "C:\\Users\\skull\\Desktop\\GraduationProjectSkillbox\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Desktop\\GraduationProjectSkillbox\\API\\API.csproj": {
+    "C:\\Users\\skull\\Desktop\\GraduationProjectSkillbox\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\GraduationProjectSkillbox\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\skull\\Desktop\\GraduationProjectSkillbox\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\User\\Desktop\\GraduationProjectSkillbox\\API\\API.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\GraduationProjectSkillbox\\API\\obj\\",
+        "projectPath": "C:\\Users\\skull\\Desktop\\GraduationProjectSkillbox\\API\\API.csproj",
+        "packagesPath": "C:\\Users\\skull\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\skull\\Desktop\\GraduationProjectSkillbox\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\skull\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\skull\\Desktop\\GraduationProjectSkillbox\\GraduationProjectSkillbox.Domain\\GraduationProjectSkillbox.Domain.csproj": {
+                "projectPath": "C:\\Users\\skull\\Desktop\\GraduationProjectSkillbox\\GraduationProjectSkillbox.Domain\\GraduationProjectSkillbox.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[5.0.11, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.6.3, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.13.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\skull\\Desktop\\GraduationProjectSkillbox\\GraduationProjectSkillbox.Domain\\GraduationProjectSkillbox.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\skull\\Desktop\\GraduationProjectSkillbox\\GraduationProjectSkillbox.Domain\\GraduationProjectSkillbox.Domain.csproj",
+        "projectName": "GraduationProjectSkillbox.Domain",
+        "projectPath": "C:\\Users\\skull\\Desktop\\GraduationProjectSkillbox\\GraduationProjectSkillbox.Domain\\GraduationProjectSkillbox.Domain.csproj",
+        "packagesPath": "C:\\Users\\skull\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\skull\\Desktop\\GraduationProjectSkillbox\\GraduationProjectSkillbox.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\skull\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -39,12 +114,6 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "dependencies": {
-            "Swashbuckle.AspNetCore": {
-              "target": "Package",
-              "version": "[5.6.3, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -56,14 +125,11 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

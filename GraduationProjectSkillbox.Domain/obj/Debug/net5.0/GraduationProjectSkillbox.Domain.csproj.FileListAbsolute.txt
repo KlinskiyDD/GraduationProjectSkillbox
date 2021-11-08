@@ -1,0 +1,12 @@
+C:\Users\skull\Desktop\GraduationProjectSkillbox\GraduationProjectSkillbox.Domain\bin\Debug\net5.0\GraduationProjectSkillbox.Domain.deps.json
+C:\Users\skull\Desktop\GraduationProjectSkillbox\GraduationProjectSkillbox.Domain\bin\Debug\net5.0\GraduationProjectSkillbox.Domain.dll
+C:\Users\skull\Desktop\GraduationProjectSkillbox\GraduationProjectSkillbox.Domain\bin\Debug\net5.0\ref\GraduationProjectSkillbox.Domain.dll
+C:\Users\skull\Desktop\GraduationProjectSkillbox\GraduationProjectSkillbox.Domain\bin\Debug\net5.0\GraduationProjectSkillbox.Domain.pdb
+C:\Users\skull\Desktop\GraduationProjectSkillbox\GraduationProjectSkillbox.Domain\obj\Debug\net5.0\GraduationProjectSkillbox.Domain.csproj.AssemblyReference.cache
+C:\Users\skull\Desktop\GraduationProjectSkillbox\GraduationProjectSkillbox.Domain\obj\Debug\net5.0\GraduationProjectSkillbox.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\skull\Desktop\GraduationProjectSkillbox\GraduationProjectSkillbox.Domain\obj\Debug\net5.0\GraduationProjectSkillbox.Domain.AssemblyInfoInputs.cache
+C:\Users\skull\Desktop\GraduationProjectSkillbox\GraduationProjectSkillbox.Domain\obj\Debug\net5.0\GraduationProjectSkillbox.Domain.AssemblyInfo.cs
+C:\Users\skull\Desktop\GraduationProjectSkillbox\GraduationProjectSkillbox.Domain\obj\Debug\net5.0\GraduationProjectSkillbox.Domain.csproj.CoreCompileInputs.cache
+C:\Users\skull\Desktop\GraduationProjectSkillbox\GraduationProjectSkillbox.Domain\obj\Debug\net5.0\GraduationProjectSkillbox.Domain.dll
+C:\Users\skull\Desktop\GraduationProjectSkillbox\GraduationProjectSkillbox.Domain\obj\Debug\net5.0\ref\GraduationProjectSkillbox.Domain.dll
+C:\Users\skull\Desktop\GraduationProjectSkillbox\GraduationProjectSkillbox.Domain\obj\Debug\net5.0\GraduationProjectSkillbox.Domain.pdb

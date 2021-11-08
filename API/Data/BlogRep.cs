@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using API.Interface;
-using API.Models;
+using GraduationProjectSkillbox.Domain.Interface;
+using GraduationProjectSkillbox.Domain.Models;
 
 namespace API.Data
 {
@@ -54,12 +54,7 @@ namespace API.Data
 
         public BlogCard GetCardOnId(int? id)
         {
-            if (id < blogCards.Count)
-            {
-                return blogCards[id.Value];
-            }
-            
-            return new NullBlogCard();
+            return blogCards[id.Value];
         }
     }
 }

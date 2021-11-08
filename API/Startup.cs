@@ -10,10 +10,13 @@ using Microsoft.OpenApi.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 using API.Data;
-using API.Interface;
-using API.Models;
+using GraduationProjectSkillbox.Domain.Interface;
+using GraduationProjectSkillbox.Domain.Models;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
 
 namespace API
 {
@@ -31,12 +34,33 @@ namespace API
         {
 
             services.AddControllers();
-            services.AddScoped<ICard<BlogCard>,BlogRep>();
-            services.AddScoped<ICard<ProjectCard>,ProjectRep>();
-            services.AddSwaggerGen(c =>
-            {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "API", Version = "v1" });
-            });
+            services.AddScoped<ICard<BlogCard>, BlogRep>();
+            services.AddScoped<ICard<ProjectCard>, ProjectRep>();
+            //services.AddScoped<IJwtTokenManager, JwtTokenManager>();
+            //services.AddSwaggerGen(c =>
+            //{
+            //    c.SwaggerDoc("v1", new OpenApiInfo { Title = "API", Version = "v1" });
+            //});
+
+            services.AddAuthentication(authOption =>
+                {
+                    authOption.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                    authOption.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+                })
+                .AddJwtBearer(jwtOption =>
+                {
+                    var key = Configuration.GetValue<string>("JwtConfig:Key");
+                    var keyByte = Encoding.ASCII.GetBytes(key);
+                    jwtOption.SaveToken = true;
+                    jwtOption.TokenValidationParameters = new TokenValidationParameters
+                    {
+                        IssuerSigningKey = new SymmetricSecurityKey(keyByte),
+                        ValidateLifetime = true,
+                        ValidateAudience = false,
+                        ValidateIssuer = false
+                    };
+                });
+            services.AddSingleton(typeof(IJwtTokenManager), typeof(JwtTokenManager));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -45,20 +69,22 @@ namespace API
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API"));
+                //app.UseSwagger();
+                //app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API"));
             }
 
             app.UseHttpsRedirection();
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
             });
+            
         }
     }
 }

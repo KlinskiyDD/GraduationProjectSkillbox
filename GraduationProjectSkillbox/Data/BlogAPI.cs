@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
-using GraduationProjectSkillbox.Interface;
-using GraduationProjectSkillbox.Models;
+using GraduationProjectSkillbox.Domain.Interface;
+using GraduationProjectSkillbox.Domain.Models;
 using Newtonsoft.Json;
 
 namespace GraduationProjectSkillbox.Data
@@ -20,7 +20,7 @@ namespace GraduationProjectSkillbox.Data
 
         public IEnumerable<BlogCard> GetCards()
         {
-            var url = @"https://localhost:44367/api/blog";
+            var url = @"https://localhost:44318/api/blog";
             var json = httpClient.GetStringAsync(url).Result;
             return JsonConvert.DeserializeObject<IEnumerable<BlogCard>>(json);
         }
@@ -42,7 +42,7 @@ namespace GraduationProjectSkillbox.Data
 
         public BlogCard GetCardOnId(int? id)
         {
-            var url = @"https://localhost:44367/api/blog/" + id;
+            var url = @"https://localhost:44318/api/blog/" + id;
             var json = httpClient.GetStringAsync(url).Result;
             return JsonConvert.DeserializeObject<BlogCard>(json);
         }

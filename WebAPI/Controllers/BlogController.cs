@@ -2,35 +2,26 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using System.Web.Mvc;
-using WebAPI.Interface;
-using WebAPI.Models.LocalModels;
+using System.Web.Http;
+using GraduationProjectSkillbox.Domain.Models;
+using GraduationProjectSkillbox.Logic.Interface;
+using GraduationProjectSkillbox.Logic.Services;
 
 namespace WebAPI.Controllers
 {
-    [Route("api/[controller]")]
-    public class BlogController : Controller
+    public class BlogController : ApiController
     {
-        private readonly ICard<BlogCard> _blogCard;
+        private ICard<BlogCard> _card = new BlogCardServices();
 
-        public BlogController(ICard<BlogCard> blogCard)
+        public IHttpActionResult GetAll()
         {
-            _blogCard = blogCard;
-        }
-        [HttpGet]
-        public IEnumerable<BlogCard> GetBlogs()
-        {
-            return _blogCard.GetCards();
-        }
-        [Route("{id}")]
-        public BlogCard GetBlogCard(int id)
-        {
-            return _blogCard.GetCardOnId(id);
+            return Ok(_card.GetCards());
         }
 
-        //public IActionResult MyTest()
-        //{
-        //    return Redirect("/Blog/Blog");
-        //}
+        public IHttpActionResult GetOnId(int id)
+        {
+            return Ok(_card.GetCardOnId(id));
+        }
     }
 }
+ 

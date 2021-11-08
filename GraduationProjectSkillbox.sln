@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GraduationProjectSkillbox",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API", "API\API.csproj", "{BD8A0EDB-1FAA-4E0A-BD38-3394019C98AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI", "WebAPI\WebAPI.csproj", "{77AD66E3-CB23-4D57-A56F-E0AAB6937B87}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraduationProjectSkillbox.Domain", "GraduationProjectSkillbox.Domain\GraduationProjectSkillbox.Domain.csproj", "{90FACDCA-F68D-42FF-86DB-42E66062836B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{BD8A0EDB-1FAA-4E0A-BD38-3394019C98AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD8A0EDB-1FAA-4E0A-BD38-3394019C98AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD8A0EDB-1FAA-4E0A-BD38-3394019C98AC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{77AD66E3-CB23-4D57-A56F-E0AAB6937B87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{77AD66E3-CB23-4D57-A56F-E0AAB6937B87}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{77AD66E3-CB23-4D57-A56F-E0AAB6937B87}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{77AD66E3-CB23-4D57-A56F-E0AAB6937B87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90FACDCA-F68D-42FF-86DB-42E66062836B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90FACDCA-F68D-42FF-86DB-42E66062836B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90FACDCA-F68D-42FF-86DB-42E66062836B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90FACDCA-F68D-42FF-86DB-42E66062836B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

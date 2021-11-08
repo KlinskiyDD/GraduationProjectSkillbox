@@ -7,10 +7,11 @@ using Microsoft.Extensions.Hosting;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 using GraduationProjectSkillbox.Data;
-using GraduationProjectSkillbox.Interface;
-using GraduationProjectSkillbox.Models;
+using GraduationProjectSkillbox.Domain.Interface;
+using GraduationProjectSkillbox.Domain.Models;
 
 namespace GraduationProjectSkillbox
 {
@@ -29,6 +30,8 @@ namespace GraduationProjectSkillbox
             services.AddMvc(options => options.EnableEndpointRouting = false);
             services.AddScoped<ICard<BlogCard>,BlogAPI>();
             services.AddScoped<ICard<ProjectCard>,ProjectAPI>();
+
+            
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -48,13 +51,14 @@ namespace GraduationProjectSkillbox
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Home}/{action=Login}");
             });
         }
     }
